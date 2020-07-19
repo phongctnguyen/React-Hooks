@@ -23,3 +23,21 @@ Ex:
 * useLayoutEffect
 * useDebugValue
 
+**useState**
+
+Syntax:
+
+const [activeIndex (*piece of state*), setIndex (*function to change this piece of state*)] = useState(null (*initial value for this piece of state)*)
+
+**useEffect**
+- allow function components to use something like lifecycle methods
+- we configure the hook to run some code automatically in one of three scenarios:
+  1. When the component is rendered for the first time only
+  2. When the component is rendered for the first time and whenever it rerenders
+  3. When the component is rendered for the first time and (whenever it rerenders and some piece of data has changed)
+
+- useEffect second argument:
+  
+  * [] -> Run at initial render (scenario 1) 
+  * nothing -> Run at initial render -> Run after every rerender (scenario 2) 
+  * [data] -> Run at initial render -> Run after every rerender if data has changed since last render (scenario 3) 
