@@ -29,6 +29,8 @@ Syntax:
 
 const [activeIndex (*piece of state*), setIndex (*function to change this piece of state*)] = useState(null (*initial value for this piece of state)*)
 
+![useState](https://i.ibb.co/QC8svPs/useState.png)
+
 **useEffect**
 - allow function components to use something like lifecycle methods
 - we configure the hook to run some code automatically in one of three scenarios:
@@ -41,3 +43,5 @@ const [activeIndex (*piece of state*), setIndex (*function to change this piece 
   * [] -> Run at initial render (scenario 1) 
   * nothing -> Run at initial render -> Run after every rerender (scenario 2) 
   * [data] -> Run at initial render -> Run after every rerender if data has changed since last render (scenario 3) 
+
+![useEffect](https://i.ibb.co/vDPf11Z/use-Effect-arguments.png)
