@@ -7,7 +7,7 @@ export default ({ items }) => {
     setActiveIndex(index);
   }
 
-  const renderdItems = items.map((item, index) => {
+  const renderedItems = items.map((item, index) => {
     const active = index === activeIndex ? 'active' : '';
 
     return (
@@ -27,7 +27,7 @@ export default ({ items }) => {
 
   return (
     <div className="ui styled accordion">
-      {renderdItems}
+      {renderedItems}
     </div>
   )
 };
