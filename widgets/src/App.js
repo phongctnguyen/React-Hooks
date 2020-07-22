@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Accordion from './component/Accordion';
 import Search from './component/Search';
 import Dropdown from './component/Dropdown';
+import Translate from './component/Translate';
 
 const items = [
 	{
@@ -39,10 +40,7 @@ export default () => {
 
 	return (
 		<div>
-			<Dropdown
-				selected={selected}
-				onSelectedChange={setSelected}
-				options={options} />
+			<Translate />
 		</div>
 	)
 };
