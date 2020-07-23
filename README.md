@@ -45,3 +45,10 @@ const [activeIndex (*piece of state*), setIndex (*function to change this piece 
   * [data] -> Run at initial render -> Run after every rerender if data has changed since last render (scenario 3) 
 
 ![useEffect](https://i.ibb.co/vDPf11Z/use-Effect-arguments.png)
+
+**useRef**
+- useRef returns a mutable ref object whose "*.current*" property is initialized to the passed argument (initialValue). The returned object will persist for the full lifetime of the component.
+
+Syntax:
+
+const refContainer = useRef(initialValue);
