@@ -8,7 +8,11 @@ export default () => {
 
   useEffect(() => {
     const timerId = setTimeout(() => {
-      setDebouncedTerm(term);
+      if (!term) {
+        setDebouncedTerm(' ');
+      } else {
+        setDebouncedTerm(term);
+      }
     }, 1000)
 
     return () => {
